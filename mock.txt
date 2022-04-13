@@ -1,0 +1,49 @@
+backend
+
+title (recibo)
+empregador
+
+nome da empresa
+
+
+//contexto
+Mês de referência + ano de referência (search bar)
+
+
+//segunda label
+código
+nome
+CPF
+CBO
+cargo
+admissão
+data de pagamento
+
+
+
+//terceira label
+código
+descrição
+referência
+proventos
+descontos
+
+
+
+//footer
+
+mensagem
+total de proventos
+total de descontos
+líquido
+
+
+saldo base
+calc inss
+calc fgts
+fgts mês
+calc IRRF
+faixa IRRF
+
+
+
