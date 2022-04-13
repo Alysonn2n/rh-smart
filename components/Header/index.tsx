@@ -39,7 +39,7 @@ export default function Header() {
                 Dashboard
               </Button>
             </Link>
-            <Link href='/holerite'>
+            <Link href='/payments'>
               <Button color="inherit">
                 Holerite
               </Button>
