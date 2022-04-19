@@ -4,7 +4,6 @@ import { Box } from '@mui/material'
 import { Typography } from '@mui/material'
 import HeadComponent from '../components/Head'
 import MediaCard from '../components/Dashcard/card'
-import PaymentsIcon from '@mui/icons-material/Payments';
 import { Container } from '@mui/material'
 
 
@@ -20,13 +19,13 @@ const Home: NextPage = () => {
       <Box mt={5}>
         <Grid container spacing={2} textAlign={'center'}>
           <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
-            <MediaCard nome='Holerite' alt=''> <PaymentsIcon/> </MediaCard>
+            <MediaCard nome='Holerite' alt='Holerite' description='' icon={}></MediaCard>
           </Grid>
           <Grid item xl={4} lg={4} md={6} sm={6}xs={12}>
-            <MediaCard  alt='' nome='Dashboard'> </MediaCard>
+            <MediaCard  alt='' nome='Dashboard' description='' icon={}></MediaCard>
           </Grid>
           <Grid item xl={4} lg={4} md={6} sm={6}xs={12}>
-            <MediaCard alt='' nome='Ponto'> </MediaCard>
+            <MediaCard alt='' nome='Ponto' description='' icon={}></MediaCard>
           </Grid>
         </Grid>
       </Box>

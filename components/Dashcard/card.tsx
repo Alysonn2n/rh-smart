@@ -4,21 +4,23 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import ContactlessIcon from '@mui/icons-material/Contactless';
+import { Description } from '@mui/icons-material';
 
 interface props {
  alt: string
  nome: string
+ description: string
+ icon:string
 }
 
-const MediaCard:React.FC<props> = ({alt, nome}) => {
+const MediaCard:React.FC<props> = ({alt, nome, description, image}) => {
     return (
         <Card sx={{ maxWidth: 500 }}>
           <CardActionArea >
             <CardMedia
               component="img"
               height="170px"
-              image={ContactlessIcon}
+              image=''
               alt=""
               sx={{bgcolor: '#B22222'}}/>
             <CardContent>
@@ -26,7 +28,7 @@ const MediaCard:React.FC<props> = ({alt, nome}) => {
                 {nome}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae eligendi dolore distinctio aut mollitia cum recusandae nihil est accusantium voluptate labore laboriosam delectus perferendis dolores excepturi, sequi blanditiis nisi asperiores.
+                {description}
               </Typography>
             </CardContent>
           </CardActionArea>

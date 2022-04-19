@@ -17,28 +17,28 @@ const Itens = () => {
         <Box sx={{ width: '100%', height: '100%', maxWidth: 360}}>
             <Paper sx={{ width: 200, maxWidth: '100%', height: '100%' }}>
                 <MenuList>
-                    <MenuItem>
+                    <Link href='/'><MenuItem>
                         <ListItemIcon>
                             <DashboardIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText>Dashboard</ListItemText>
-                    </MenuItem>
-                    <MenuItem>
+                    </MenuItem></Link>
+                    <Link href='payments'><MenuItem>
                         <ListItemIcon>
                             <DraftsIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText>Holerite</ListItemText>
-                    </MenuItem>
-                    <MenuItem>
+                    </MenuItem></Link>
+                    <Link href='ponto'><MenuItem>
                         <ListItemIcon>
                             <AccessTimeIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText>Ponto</ListItemText>
-                    </MenuItem>
+                    </MenuItem></Link>
 
                     <Divider />
                     <MenuItem>
-                        <ListItemText>Web Clipboard</ListItemText>
+                        <ListItemText><Link href='#'>Web Clip</Link>board</ListItemText>
                     </MenuItem>
                 </MenuList>
             </Paper>
