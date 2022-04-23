@@ -5,8 +5,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import Paper from '@mui/material/Paper';
 
-export const PaymentsFirstBody = ({user}: any) => {
-    debugger;
+export const PaymentsFirstBody:React.FC<any> = ({user}) => {
     return (
         <TableContainer component={Paper} sx={{width: '100%', marginTop: '1.25rem'}}>
             <TableHead>
