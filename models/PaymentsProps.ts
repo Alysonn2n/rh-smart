@@ -10,5 +10,5 @@ export interface UserProps {
 
 export interface PaymentsProps {
     payments: any
-    user: UserProps
+    user: UserProps | any
 }

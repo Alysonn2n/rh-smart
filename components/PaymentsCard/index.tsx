@@ -24,7 +24,6 @@ const PaymentsCard:React.FC<PaymentsProps> = (
     }
 ) => {
     return (
-        <>
             <Card sx={{minWidth: '100%'}}>
                 <CardContent sx={{border:1}}>
                     <PaymentsHeader user={user} sx={{width: '100%'}} />
@@ -54,9 +53,8 @@ const PaymentsCard:React.FC<PaymentsProps> = (
                         </TableFooter>
                     </TableContainer>
 
-                </CardContent>
-            </Card>
-        </>
+            </CardContent>
+        </Card>
     )
 }
 
