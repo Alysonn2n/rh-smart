@@ -4,16 +4,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import { Description } from '@mui/icons-material';
 
 interface props {
  alt: string
  nome: string
  description: string
- icon:string
 }
 
-const MediaCard:React.FC<props> = ({alt, nome, description, image}) => {
+const MediaCard:React.FC<props> = ({alt, nome, description}) => {
     return (
         <Card sx={{ maxWidth: 500 }}>
           <CardActionArea >

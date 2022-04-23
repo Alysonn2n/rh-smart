@@ -8,23 +8,23 @@ import Paper from '@mui/material/Paper';
 export const PaymentsFirstBody = ({user}: any) => {
     debugger;
     return (
-        <TableContainer component={Paper} sx={{width: '100%', marginTop: '1.25rem'}}>
+        <TableContainer component={Paper} sx={{width: '100%', marginTop: '1.25rem', border: 1}}>
             <TableHead>
-                <TableRow>
-                    <TableCell>
-                        Código
+                <TableRow sx={{width:'100%'}}>
+                    <TableCell sx={{width:'10%'}}>
+                        <b>Código</b>
                     </TableCell>
-                    <TableCell>
-                        Nome
+                    <TableCell sx={{width:'20%'}}>
+                        <b>Nome</b>
                     </TableCell>
-                    <TableCell>
-                        CBO
+                    <TableCell sx={{width:'1%'}}>
+                        <b>CBO</b>
                     </TableCell>
-                    <TableCell>
-                        Função
+                    <TableCell sx={{width:'30%'}}>
+                        <b>Função</b>
                     </TableCell>
-                    <TableCell>
-                        Admissão
+                    <TableCell sx={{width:'10%'}}>
+                       <b>Admissão</b>
                     </TableCell>
                 </TableRow>
             </TableHead>

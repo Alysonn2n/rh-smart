@@ -7,20 +7,20 @@ import Paper from '@mui/material/Paper';
 
 export const PaymentsHeader: React.FC = ({user}: any) => {
     return (
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} sx={{display:'flex', flexDirection:'column', gap:'20px', border: 1}}>
             <TableHead>
                 <TableRow>
-                    <TableCell>
+                    <TableCell sx={{width:'65%'}}>
                         {user.boss}
                     </TableCell>
-                    <TableCell>
-                    Recibo de Pagamento de Salário
+                    <TableCell sx={{width:'40%', fontSize:'17px'}}>
+                    <b>Recibo de Pagamento de Salário</b>
                     </TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
             <TableRow>
-                <TableCell>
+                <TableCell sx={{width:'79%'}}>
                     Nome da Empresa: <br></br>
                     {user.workplace}
                 </TableCell>

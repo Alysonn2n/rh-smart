@@ -11,19 +11,19 @@ export const PaymentsSecBody = ({body}: any) => {
             <TableHead>
                 <TableRow>
                     <TableCell>
-                        Código
+                        <b>Código</b>
                     </TableCell>
                     <TableCell>
-                        Descrição
+                       <b> Descrição</b>
                     </TableCell>
                     <TableCell>
-                        Referência
+                        <b>Referência</b>
                     </TableCell>
                     <TableCell>
-                        Proventos
+                        <b>Proventos</b>
                     </TableCell>
                     <TableCell>
-                        Descontos
+                        <b>Descontos</b>
                     </TableCell>
                 </TableRow>
             </TableHead>
@@ -48,8 +48,8 @@ export const PaymentsSecBody = ({body}: any) => {
                                     {elements.discounts}
                                 </TableCell>
                             </TableRow>
-                            <TableRow>
-                                <TableCell rowSpan={2} colSpan={3}>
+                            <TableRow sx={{width:'100%'}}>
+                                <TableCell rowSpan={2} colSpan={3} sx={{width:'50%'}}>
                                     Message: {elements.message}
                                 </TableCell>
                                 <TableRow>

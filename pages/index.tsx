@@ -19,13 +19,13 @@ const Home: NextPage = () => {
       <Box mt={5}>
         <Grid container spacing={2} textAlign={'center'}>
           <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
-            <MediaCard nome='Holerite' alt='Holerite' description='' icon={}></MediaCard>
+            <MediaCard nome='Holerite' alt='Holerite' description=''></MediaCard>
           </Grid>
           <Grid item xl={4} lg={4} md={6} sm={6}xs={12}>
-            <MediaCard  alt='' nome='Dashboard' description='' icon={}></MediaCard>
+            <MediaCard  alt='' nome='Dashboard' description=''></MediaCard>
           </Grid>
           <Grid item xl={4} lg={4} md={6} sm={6}xs={12}>
-            <MediaCard alt='' nome='Ponto' description='' icon={}></MediaCard>
+            <MediaCard alt='' nome='Ponto' description=''></MediaCard>
           </Grid>
         </Grid>
       </Box>

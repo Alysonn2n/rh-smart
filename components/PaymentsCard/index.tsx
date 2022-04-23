@@ -26,7 +26,7 @@ const PaymentsCard:React.FC<PaymentsProps> = (
     return (
         <>
             <Card sx={{minWidth: '100%'}}>
-                <CardContent>
+                <CardContent sx={{border:1}}>
                     <PaymentsHeader user={user} sx={{width: '100%'}} />
                     <PaymentsFirstBody user={user} sx={{width: '100%'}} />
                     <TableContainer component={Paper} sx={{marginTop: '1.25rem'}}>
@@ -34,19 +34,19 @@ const PaymentsCard:React.FC<PaymentsProps> = (
                         <TableFooter>
                             {payments[0].footer.map((elements: any, index: any) => (
                                 <TableRow key={index}>
-                                    <TableCell>
+                                    <TableCell sx={{width:'20%'}}>
                                         Saldo Base <br></br>{elements.base_earnings}
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={{width:'20%'}}>
                                         Base Calc. INSS <br></br>{elements.inss_calc}
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={{width:'20%'}}>
                                         FGTS do Mês<br></br>{elements.montly_fgts}
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={{width:'20%'}}>
                                         Base Calc. IRRF:<br></br>{elements.irff_calc}
                                     </TableCell>
-                                    <TableCell>
+                                    <TableCell sx={{width:'20%'}}>
                                         Faixa IRRF: <br></br> {elements.range_irrf}
                                     </TableCell>
                                 </TableRow>
