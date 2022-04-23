@@ -24,39 +24,37 @@ const PaymentsCard:React.FC<PaymentsProps> = (
     }
 ) => {
     return (
-        <>
-            <Card sx={{minWidth: '100%'}}>
-                <CardContent>
-                    <PaymentsHeader user={user} sx={{width: '100%'}} />
-                    <PaymentsFirstBody user={user} sx={{width: '100%'}} />
-                    <TableContainer component={Paper} sx={{marginTop: '1.25rem'}}>
-                        <PaymentsSecBody body={payments[0].body} />
-                        <TableFooter>
-                            {payments[0].footer.map((elements: any, index: any) => (
-                                <TableRow key={index}>
-                                    <TableCell>
-                                        Saldo Base <br></br>{elements.base_earnings}
-                                    </TableCell>
-                                    <TableCell>
-                                        Base Calc. INSS <br></br>{elements.inss_calc}
-                                    </TableCell>
-                                    <TableCell>
-                                        FGTS do Mês<br></br>{elements.montly_fgts}
-                                    </TableCell>
-                                    <TableCell>
-                                        Base Calc. IRRF:<br></br>{elements.irff_calc}
-                                    </TableCell>
-                                    <TableCell>
-                                        Faixa IRRF: <br></br> {elements.range_irrf}
-                                    </TableCell>
-                                </TableRow>
-                            ))}
-                        </TableFooter>
-                    </TableContainer>
+        <Card sx={{minWidth: '100%'}}>
+            <CardContent>
+                <PaymentsHeader user={user} sx={{width: '100%'}} />
+                <PaymentsFirstBody user={user} sx={{width: '100%'}} />
+                <TableContainer component={Paper} sx={{marginTop: '1.25rem'}}>
+                    <PaymentsSecBody body={payments[0].body} />
+                    <TableFooter>
+                        {payments[0].footer.map((elements: any, index: any) => (
+                            <TableRow key={index}>
+                                <TableCell>
+                                    Saldo Base <br></br>{elements.base_earnings}
+                                </TableCell>
+                                <TableCell>
+                                    Base Calc. INSS <br></br>{elements.inss_calc}
+                                </TableCell>
+                                <TableCell>
+                                    FGTS do Mês<br></br>{elements.montly_fgts}
+                                </TableCell>
+                                <TableCell>
+                                    Base Calc. IRRF:<br></br>{elements.irff_calc}
+                                </TableCell>
+                                <TableCell>
+                                    Faixa IRRF: <br></br> {elements.range_irrf}
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableFooter>
+                </TableContainer>
 
-                </CardContent>
-            </Card>
-        </>
+            </CardContent>
+        </Card>
     )
 }
 

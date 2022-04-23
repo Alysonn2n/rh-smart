@@ -5,7 +5,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import Paper from '@mui/material/Paper';
 
-export const PaymentsHeader: React.FC = ({user}: any) => {
+export const PaymentsHeader: React.FC<any> = ({user}) => {
     return (
         <TableContainer component={Paper}>
             <TableHead>
