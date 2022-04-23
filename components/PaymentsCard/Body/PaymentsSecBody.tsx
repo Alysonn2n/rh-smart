@@ -5,6 +5,8 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 
 
+import { StyledTableCell } from './TableCellStyled.styled';
+
 export const PaymentsSecBody = ({body}: any) => {
     return (
         <>
@@ -48,22 +50,28 @@ export const PaymentsSecBody = ({body}: any) => {
                                     {elements.discounts}
                                 </TableCell>
                             </TableRow>
-                            <TableRow sx={{width:'100%'}}>
-                                <TableCell rowSpan={2} colSpan={3} sx={{width:'50%'}}>
+                            <TableRow sx={{width:'100%', paddingRight: '0 !important'}}>
+                                <TableCell rowSpan={3} colSpan={4}>
                                     Message: {elements.message}
                                 </TableCell>
-                                <TableRow>
-                                    <TableCell>Total de Proventos</TableCell>
-                                    <TableCell align="right">{elements.total_earnings}</TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>Total de Descontos</TableCell>
-                                    <TableCell align="right">{elements.total_discounts}</TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>Liquidez</TableCell>
-                                    <TableCell align="right">{elements.liquidity}</TableCell>
-                                </TableRow>
+                                <TableCell style={{float: 'right'}}>
+                                    <TableRow>
+                                        <TableCell colSpan={2}>Total de Proventos</TableCell>
+                                        <TableCell align="right">{elements.total_earnings}</TableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableCell colSpan={2}>Total de Descontos</TableCell>
+                                        <TableCell align="right">{elements.total_discounts}</TableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <StyledTableCell colSpan={2}>
+                                            Liquidez
+                                        </StyledTableCell>
+                                        <StyledTableCell align="right">
+                                            {elements.liquidity}
+                                        </StyledTableCell>
+                                    </TableRow>
+                                </TableCell>
                             </TableRow>
                         </>
                     ))

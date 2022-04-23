@@ -12,7 +12,7 @@ const Payments = () => {
             <Grid item xs={8}>
                 <PaymentsSearch />
             </Grid>
-            <Grid item xs={8} mt={5}>
+            <Grid item xs={8} my={5}>
                 <PaymentsCard  user={userData} payments={PaymentsData}/>
             </Grid>
         </Grid>
