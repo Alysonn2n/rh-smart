@@ -18,7 +18,6 @@ const MediaCard:React.FC<props> = ({alt, nome}) => {
             <CardMedia
               component="img"
               height="170px"
-              image={ContactlessIcon}
               alt=""
               sx={{bgcolor: '#B22222'}}/>
             <CardContent>
